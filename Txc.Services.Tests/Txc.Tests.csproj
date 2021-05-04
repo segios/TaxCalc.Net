@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Rates\UAH\2017_CADUAH.json" Link="Rates\UAH\2017_CADUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2017_EURUAH.json" Link="Rates\UAH\2017_EURUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2017_USDUAH.json" Link="Rates\UAH\2017_USDUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2018_CADUAH.json" Link="Rates\UAH\2018_CADUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2018_EURUAH.json" Link="Rates\UAH\2018_EURUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2018_USDUAH.json" Link="Rates\UAH\2018_USDUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2019_CADUAH.json" Link="Rates\UAH\2019_CADUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2019_EURUAH.json" Link="Rates\UAH\2019_EURUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2019_USDUAH.json" Link="Rates\UAH\2019_USDUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2020_CADUAH.json" Link="Rates\UAH\2020_CADUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2020_EURUAH.json" Link="Rates\UAH\2020_EURUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\Rates\UAH\2020_USDUAH.json" Link="Rates\UAH\2020_USDUAH.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.assert" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Rates\UAH\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Txc.Model\Txc.Model.csproj" />
+    <ProjectReference Include="..\Txc.Services\Txc.Services.csproj" />
+  </ItemGroup>
+
+</Project>
